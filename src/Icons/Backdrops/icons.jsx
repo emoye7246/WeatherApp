@@ -20,5 +20,21 @@ export const myIcons = {
     "clear-day": clear_day,
     "clear-night": clear_night
 
+}
+
+import humid from '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/assets/Icons/rightIcons/humidity.png'
+import chanceOfRain from '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/assets/Icons/rightIcons/drop.png'
+import windSpeed from '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/assets/Icons/rightIcons/windy.png'
+import highs from '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/assets/Icons/rightIcons/weather.png'
+
+export const myIconsRight = {
+
+
+    humidityIcon: humid, 
+    highsIcon: highs, 
+    chance: chanceOfRain,
+    speed: windSpeed
+
+
 
 }
