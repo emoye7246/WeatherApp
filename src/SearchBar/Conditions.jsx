@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
 import { formatInTimeZone } from "date-fns-tz"
-import { add, addHours, getHours } from "date-fns"
-import { myBackgrounds } from "../Icons/Backdrops/background"
 
 
 export const Conditions = ({icon, condition, tempature, timezone, address}) => {
@@ -33,8 +31,8 @@ export const Conditions = ({icon, condition, tempature, timezone, address}) => {
 
                 <img src={icon} alt="" className="h-[200px] w-[200px]"/>
                 <div className="text-[36px]">{condition}</div>
-                <div>{tempature}<span>&#176; F</span></div>
-                <div>{time}</div>
+                <div className="text-[24px]">{tempature}<span>&#176; F</span></div>
+                <div className="text-[24px]">{time}</div>
                 <div className="text-2xl">{address}</div>
 
 

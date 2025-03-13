@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react"
 import { Conditions, Details} from "./SearchBar/Conditions"
-import { myIcons } from "./Icons/Backdrops/icons"
-import { myIconsRight } from "./Icons/Backdrops/icons"
-import { myBackgrounds } from "./Icons/Backdrops/background"
-import Crimson from '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/assets/Fonts/Crimson_Text/CrimsonText-Regular.ttf'
-import Search from '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/assets/Icons/search.png'
+import { myIcons } from "./icons"
+import { myIconsRight } from "./icons"
+import { myBackgrounds } from "./background"
 import { format} from "date-fns"
 
 export const App = () => {
@@ -68,9 +66,8 @@ if(error ) return <div>FailedLooking for the report</div>
 
             
 
-            <div className="flex flex-col min-h-full text-[#ffffff] font-[Crimson]" style={{backgroundImage: `url(${myBackgrounds[backgrounds]})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+            <div className="flex flex-col min-h-full text-white" style={{backgroundImage: `url(${myBackgrounds[backgrounds]})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', fontFamily: 'Crimson' }}>
 
-                <style></style>
 
                 <div className="flex flex-row max-w-full min-h-full justify-between">
 
@@ -86,7 +83,7 @@ if(error ) return <div>FailedLooking for the report</div>
 
                             <div className="flex flex-row gap-x-5 text-center">
                                 <input type="text" onChange={(e) => setInputLocation(e.target.value)} placeholder="Enter Location" className="flex text-center border-black rounded-[14px] bg-gray-100/35" />
-                                <img src={Search} alt="search" onClick={() => setLocation(inputLocation)} className="w-[24px] h-[24px]" />
+                                <img src={myIcons.search} alt="search" onClick={() => setLocation(inputLocation)} className="w-[24px] h-[24px]" />
                             </div>
 
                     </div>
@@ -123,7 +120,7 @@ if(error ) return <div>FailedLooking for the report</div>
                                 <div>{day.conditions}</div>
                             </div>
 
-                            <div className="flex items-center justify-center">{day.temp}</div>
+                            <div className="flex items-center justify-center text-[24px]">{day.temp}</div>
                             <div className="mb-5">Feels Like: {day.feelslike}<span>&#176; F</span></div>
 
                         </div>
