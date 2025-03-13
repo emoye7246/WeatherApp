@@ -4,7 +4,7 @@ import { myIcons } from "./icons"
 import { myIconsRight } from "./icons"
 import { myBackgrounds } from "./background"
 import { format} from "date-fns"
-import 'src/index.css'
+import '/src/index.css'
 
 
 export const App = () => {
