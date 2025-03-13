@@ -54,8 +54,14 @@ export const App = () => {
     fetchData()
 }, [location, backgrounds])
 
-if(loading) return <div>Were Looking for the report</div>
-if(error ) return <div>FailedLooking for the report</div>
+if(loading) return <div className="flex flex-row max-w-screen min-h-screen items-center justify-center gap-x-10">
+    <img src={myIcons["clear-day"]} alt="sunIcon" className=" h-[64px] w-[64px]" />
+    <div className="text-white">Hang tight while we fetch that report</div>
+</div>
+if(error ) return <div className="flex flex-row max-w-screen min-h-screen items-center justify-center gap-x-10">
+<img src={myIcons["clear-day"]} alt="sunIcon" className="h-[64px] w-[64px]" />
+<div className="text-white">Failed finding report please refresh to try again</div>
+</div>
 
 
 

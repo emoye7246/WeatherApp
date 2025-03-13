@@ -21,3 +21,14 @@
         transform: translateY(0);
     }
   }
+
+  #fade{
+
+  animation: fade-in 0.9s ease-out backwards;
+
+  }
+
+  body{
+
+    background-color: rgb(67, 82, 107);
+  }
