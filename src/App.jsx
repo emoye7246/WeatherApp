@@ -4,6 +4,8 @@ import { myIcons } from "./icons"
 import { myIconsRight } from "./icons"
 import { myBackgrounds } from "./background"
 import { format} from "date-fns"
+import '/Users/elijahmoye/Desktop/Weather/WeatherApp/src/index.css'
+
 
 export const App = () => {
     
